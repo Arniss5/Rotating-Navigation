@@ -17,22 +17,26 @@ body {
     transform-origin: top left;
     background-color: #fff;
     min-height: 100vh;
+    transition: transform 0.4s linear;
 
 }
 
 /* MENU */
 .menu-container {
     position: fixed;
+    
 }
 
 .menu-toggle {
-    background-color: #4034eb;
+    background-color: #2e915f;
     height: 200px;
     width: 200px;
     border-radius: 50%;
     position: relative;
     left: -100px;
     top: -100px;
+    transition: transform 0.4s linear;
+
 
 }
 
@@ -51,7 +55,8 @@ button {
 }
 
 #close {
-    left: 20%
+    left: 20%;
+    font-size: 32px;
 }
 
 
@@ -77,14 +82,58 @@ small {
     font-style: italic;
 }
 
+
+/* NAVIGATION */
+
+.container.rotated + nav {
+    transform: translateX(0);
+    transition-delay: 0.6s;
+}
+
+nav {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 100;
+    transition: transform 0.4s ease-in;
+    
+}
+
+nav li {
+    padding: 10px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav li i {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+nav li + li {
+    margin-left: 25px;
+}
+
+nav li + li + li {
+    margin-left: 50px;
+}
+
+
 /* rotation */
 
 .rotated {
     transform: rotate(-20deg);
+    transition-delay: 0.4s;
 }
 
 .container.rotated .menu-toggle {
     transform: rotate(-70deg);
 }
+
+
+
+
 
 

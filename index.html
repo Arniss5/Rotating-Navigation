@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Rotating navigation</title>
   </head>
   <body>
     <div class="container">
       <!-- ROTATING MENU -->
-      <div class="menu-toggle">
-        <button id="open">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <button id="close">
-          <i class="fa-solid fa-circle-xmark"></i>
-        </button>
+      <div class="menu-container">
+        <div class="menu-toggle">
+          <button id="open">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button id="close">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
       </div>
 
       <!-- MAIN -->
@@ -65,15 +73,15 @@
           quos accusantium explicabo!
         </p>
       </div>
-      <!-- NAVIGATION -->
-      <nav>
-        <ul>
-          <li><i class="fa-solid fa-house-chimney"></i>Home</li>
-          <li><i class="fa-solid fa-address-card"></i>About me</li>
-          <li><i class="fa-solid fa-envelope"></i>Contact</li>
-        </ul>
-      </nav>
     </div>
+    <!-- NAVIGATION -->
+    <nav>
+      <ul>
+        <li><i class="fa-solid fa-house-chimney"></i>Home</li>
+        <li><i class="fa-solid fa-address-card"></i>About</li>
+        <li><i class="fa-solid fa-envelope"></i>Contact</li>
+      </ul>
+    </nav>
 
     <script src="./script.js"></script>
   </body>
