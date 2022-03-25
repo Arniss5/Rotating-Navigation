@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #4a486b;
+}
+
+.container {
+    /* rotation point */
+    transform-origin: top left;
+    background-color: #fff;
+    min-height: 100vh;
+
+}
+
+/* MENU */
+.menu-container {
+    position: fixed;
+}
+
+.menu-toggle {
+    background-color: #4034eb;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    left: -100px;
+    top: -100px;
+
+}
+
+button {
+    font-size: 30px;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+}
+
+#open {
+    left: 60%;
+}
+
+#close {
+    left: 20%
+}
+
+
+/* MAIN */
+
+.article-container {
+
+    text-align: center;
+    padding: 10vh 20vw;
+}
+
+h1, h3 {
+    margin: 10px;
+}
+
+p {
+    text-align: justify;
+    margin: 25px;
+}
+
+small {
+    color: rgb(109, 100, 100);
+    font-style: italic;
+}
+
+/* rotation */
+
+.rotated {
+    transform: rotate(-20deg);
+}
+
+.container.rotated .menu-toggle {
+    transform: rotate(-70deg);
+}
+
+
